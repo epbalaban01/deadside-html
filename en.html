@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DEADSIDE</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class='bg'></div>
+        <div class='person blur2'></div>
+    </div>
+    
+    <div class="container">
+        <div class='logo'></div>
+
+        <div class="window" id='about'>
+            <div class="header">
+                <span class=header-text>About</span>
+                <svg class='header-bg' width="900" height="60" viewBox="0 0 900 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 27.1429L27.1326 0H900V60H0V27.1429Z" fill="url(#paint0_linear)"/>
+            <defs>
+              <linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.000527397 -6720) scale(900 13500)">
+                <stop/>
+                <stop offset="1" stop-opacity="0.6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+            </div>
+
+            <div class="content">
+    Deadside is a hardcore multiplayer shooter with wide open spaces as well as gaming possibilities<br/><br/>
+
+    In Deadside you are being immersed into a realistic game play in a grim setting of a post apocalyptic world. It aims to keep the balance between the dynamic of a shooter and a  hardcore survival game. The game world does not suggest fantastic elements like zombies or anomalies but focuses the player's attention on realistic aspects of life in the ruins of a dead civilization<br/><br/>
+
+    Open world, survival in a post apocalyptic world, real weapons, water borne and above ground transport, crafts, building, anything you need to survive and get an adrenaline rush, you can find it all here in Deadside<br/><br/>
+
+    The game is under active development
+            </div>
+        </div>
+
+        <div class="window" id='galeri'>
+          <div class="header">
+              <span class=header-text>Gallery</span>
+              <svg class='header-bg' width="900" height="60" viewBox="0 0 900 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 27.1429L27.1326 0H900V60H0V27.1429Z" fill="url(#paint0_linear)"/>
+          <defs>
+            <linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.000527397 -6720) scale(900 13500)">
+              <stop/>
+              <stop offset="1" stop-opacity="0.6"/>
+            </linearGradient>
+          </defs>
+        </svg>
+          </div>
+
+          <div class="content">
+              Gallery
+          </div>
+      </div>
+
+      <div class="window" id='contact1'>
+          <div class="header">
+              <span class=header-text>Contact</span>
+              <svg class='header-bg' width="900" height="60" viewBox="0 0 900 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 27.1429L27.1326 0H900V60H0V27.1429Z" fill="url(#paint0_linear)"/>
+          <defs>
+            <linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.000527397 -6720) scale(900 13500)">
+              <stop/>
+              <stop offset="1" stop-opacity="0.6"/>
+            </linearGradient>
+          </defs>
+        </svg>
+          </div>
+
+          <div class="content">
+              Contact
+          </div>
+      </div>
+
+
+        <div class="window" id='contact'>
+            <div class="header">
+                <span class=header-text>Contact</span>
+                <svg class='header-bg' width="900" height="60" viewBox="0 0 900 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 27.1429L27.1326 0H900V60H0V27.1429Z" fill="url(#paint1_linear)"/>
+            <defs>
+              <linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.000527397 -6720) scale(900 13500)">
+                <stop/>
+                <stop offset="1" stop-opacity="0.6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+            </div>
+
+            <div class="content">
+    Questions:<br/>
+    epbalaban01@gmail.com<br/><br/>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="wrapper">
+
+                <div class="icons">
+                    <div class='icon' id='badpixel' onclick='show("contact")'></div>
+                    <a href='https://store.steampowered.com/app/895400/Deadside/' class="icon" id='steam'></a>
+                   
+                    
+                    <div onclick='setLang("en")' class="lang icon active-lang" id='lang-en'>EN</div>
+                    
+                    <div onclick='setLang("tr")' class="lang icon" id='lang-tr'>TR</div>
+                </div>
+
+                <div class='buttons'>
+
+                    <div class="button" onclick='hideAll()'>
+                        <span class='button-text'>Home</span>
+                        <svg class='button-svg' width="165" height="40" viewBox="0 0 165 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M164 1V39H1V18.5099L18.5387 1H164Z" fill="black" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    <!--
+              <div class="button">
+                <span class='button-text'>Button</span>
+                <svg class='button-svg' width="165" height="40" viewBox="0 0 165 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M164 1V39H1V18.5099L18.5387 1H164Z" fill="black" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
+-->
+
+                    <div class="button" onclick='show("about")'>
+                        <span class='button-text'>About</span>
+                        <svg class='button-svg' width="165" height="40" viewBox="0 0 165 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M164 1V39H1V18.5099L18.5387 1H164Z" fill="black" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    <div class="button" onclick='show("galeri")'>
+                      <span class='button-text'>Gallery</span>
+                      <svg class='button-svg' width="165" height="40" viewBox="0 0 165 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M164 1V39H1V18.5099L18.5387 1H164Z" fill="black" stroke="white" stroke-width="2"/>
+                      </svg>
+                  </div>
+                  <div class="button" onclick='show("contact1")'>
+                      <span class='button-text'>Contact</span>
+                      <svg class='button-svg' width="165" height="40" viewBox="0 0 165 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M164 1V39H1V18.5099L18.5387 1H164Z" fill="black" stroke="white" stroke-width="2"/>
+                      </svg>
+                  </div>
+              </div>
+
+
+            
+
+
+
+                <div class="icons-links">
+                  <a href='https://www.facebook.com/eyupcan.balaban.7' target="_blank" class="icon" id='facebook'></a>
+                  <a href='https://twitter.com/epbalaban01' target="_blank" class="icon" id='twitter'></a>
+                  <a href='https://vk.com/' target="_blank" class="icon" id='vk'></a>
+                  <a href='https://www.youtube.com/channel/UCUhEUfsxwjne42GhNscKa4w?view_as=subscriber' target="_blank" class="icon" id='youtube'></a>
+                  <a href='https://www.twitch.tv/balaban1' target="_blank" class="icon" id='twitch'></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

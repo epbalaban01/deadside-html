@@ -1,0 +1,386 @@
+body {
+	margin: 0;
+	font-family: BenderBold, sans-serif;
+	background: #000000;
+}
+.bg-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.bg {
+	background-image: url(bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+.person {
+	background-image: url(person.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+.blur {
+	filter: blur(10px);
+}
+.blur2 {
+	filter: blur(3px);
+}
+.logo {
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 200px;
+	margin: auto;
+	width: 100%;
+	margin-top: 50px;
+}
+.footer {
+	background: rgba(0,0,0,0.6);
+	bottom: 0;
+	left: 0;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+}
+.wrapper {
+	display: flex;
+	width: 1200px;
+	margin: auto;
+	padding: 5px;
+	margin-top: 5px;
+}
+.icon {
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 30px;
+	margin: 5px;
+	display: block;
+}
+.icon:hover {
+	opacity: 0.6;
+}
+#badpixel {
+	background-image: url(BAD-PIXEL1-.png);
+	width: 40px;
+}
+#steam {
+	margin-left: 00px;
+	background-image: url(STEAM.png);
+	width: 95px;
+}
+#facebook {
+	background-image: url(FACEBOOK.png);
+	width: 30px;
+}
+#twitter {
+	background-image: url(TWITTER.png);
+	width: 35px;
+}
+#vk {
+	background-image: url(VK.png);
+	width: 30px;
+}
+#youtube {
+	background-image: url(YOUTUBE.png);
+	width: 50px;
+}
+#twitch {
+	background-image: url(TWITCH.png);
+	width: 30px;
+}
+.container {
+	position: absolute;
+	width: 900px;
+	margin-left: calc( ( 100% - 900px ) / 2 );
+}
+.button {
+	color: #fff;
+	height: 40px;
+	margin-right: 10px;
+	position: relative;
+	width: 165px;
+}
+.buttons, .icons, .icons-links{
+	display: flex;
+}
+.buttons{
+    width: 100%;
+    justify-content: flex-end;
+}
+.icons-links{
+
+    
+}
+.button-svg {
+	fill: #000;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.button-text {
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 40px;
+	width: 165px;
+	z-index: 10;
+	letter-spacing: 3px;
+}
+.button:hover .button-svg path {
+	fill: #fff;
+}
+.button:hover .button-text {
+	color: #000;
+    cursor: pointer;
+}
+
+.window {
+	width: 100%;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition-duration: 0.3s;
+}
+.window .header {
+	height: 60px;
+	position: relative;
+}
+.window .header-text {
+	color: #ffffff;
+	font-size: 20px;
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	z-index: 10;
+	line-height: 60px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.window .header-bg {
+	position: absolute;
+	left: 0;
+}
+.window .content {
+	color: #fff;
+	background: rgba(0,0,0,0.6);
+	padding: 20px;
+	height: 400px;
+	transform: scaleY(0);
+	transform-origin: top;
+	overflow-y: hidden;
+	line-height: 0px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-align: justify;
+	transition-duration: 0.3s;
+	font-family: Bender, sans-serif;
+}
+.visible {
+	opacity: 1;
+	height: auto;
+}
+.visible .content {
+	transform: scaleY(1)!important;
+	line-height: 32px;
+}
+.lang{
+    background: none;
+    display: block;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 10px;
+}
+
+.active-lang{
+    color: #000;
+    background: #fff;
+}
+
+@font-face {
+	font-family: 'Bender';
+	src: url('Bender.otf');
+}
+@font-face {
+	font-family: 'BenderBold';
+	src: url('Bender-bold.otf');
+}
+
+
+@media (max-width: 900px){
+    .bg{
+        background-position: 65%;
+    }
+    .container{
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px
+    }
+    .logo{
+    	width: 90vw;
+    	height: 18vw;
+    	margin: auto;
+    	margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .person{
+        background-position: 15%;
+    }
+    .lang{
+        line-height: 30px;
+    }
+    .footer{
+        height: auto;
+        width: 100vw;
+        overflow-y: scroll;
+    }
+    .window .header{
+        height: 40px;
+    }
+    .window .header-bg{
+        left: -150px;
+        margin: 0;
+        height: 40px;
+        position: absolute;
+    }
+    .buttons{
+        max-width: 350px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        margin: 5px;
+        margin-top: 10px;
+    }
+    .wrapper{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+    #badpixel {
+        width: 50px;
+        margin-left: 0px;
+    }
+    #steam {
+        width: 100px;
+    }
+    #youtube {
+        width: 50px;
+    }
+    #twitch{
+        margin-right: 0px;
+    }
+    #facebook{
+        margin-left: 0px;
+    }
+    #lang-tr{
+        margin-right: 0px;
+    }
+    .icon{
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+    }
+    .icons{
+        max-width: 350px;
+        order: 1;
+        margin: auto;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .icons-links{
+        max-width: 350px;
+        order: 2;
+        margin: auto;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .button-svg, .button{
+        height: 40px;
+    }
+    .button{
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+    .button-text{
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .window .header-text{
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .window .content{
+        height: 40vh;
+        overflow-y: scroll;
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape){
+    .logo{
+        width: 30vw;
+        height: 10vh;
+    }
+    .wrapper{
+        justify-content: space-between;
+    }
+    .icons{
+        max-width: 40vw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .icons-links{
+        max-width: 40vw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .window .header-bg{
+        left: -80px;
+        height: 50px;
+    }
+    .window .header{
+        height: 50px;
+    }
+    .window .header-text{
+        line-height: 50px;
+    }
+    .window .content{
+        height: 45vh;
+    }
+    .buttons{
+        position: fixed;
+        top: 0;
+        max-width: 100%;
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .button{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+}
