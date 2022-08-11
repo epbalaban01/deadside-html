@@ -18,7 +18,8 @@ Deadside Game Web Html Code Tasarımı daha kolay bir şekilde burdan indirip ya
 <b>Ekran Görüntüleri</b>
 |   |
 |---|
-| ![epbalaban01 github io_deadside-html_](https://user-images.githubusercontent.com/42430554/184125799-e45af945-e693-47f5-9526-f8677aa15fab.png) | 
+| ![epbalaban01 github io_deadside-html_ (2)](https://user-images.githubusercontent.com/42430554/184126044-7f4a06d6-a977-42f1-a792-1ecb8cc4bb50.png) | 
+
 
 
 
